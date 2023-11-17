@@ -1,0 +1,92 @@
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+    background-color: black;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+h1 {
+    color: $accent-color;
+}
+
+h2,h3,h4,h5 {
+    color: $main-color;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    color: $basic-color;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+ul {
+    li{
+        position: relative;
+        padding-left: 10px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: calc(50% - 3px);
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $accent-color;
+    }
+        
+    }
+}
+
+ol {
+    list-style-type: decimal;
+    li::marker {
+        color: $accent-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.444;
+    }
+}
+
+a {
+    color: $active-regular-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.25;
+    transition: .2s;
+
+    &:hover {
+        color: $accent-color;
+        transition: .2s;
+    }
+}
+
+.active-lang {
+    border-radius: 8px;
+    background-color: $accent-color;
+    color: $basic-white-color;
+}
+
+.active-nav-link {
+    display: inline-block;
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+}

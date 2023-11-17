@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  background-color: black;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+h1 {
+  color: #F0145A;
+}
+
+h2, h3, h4, h5 {
+  color: #323264;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+ul li {
+  position: relative;
+  padding-left: 10px;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #F0145A;
+}
+
+ol {
+  list-style-type: decimal;
+}
+ol li::marker {
+  color: #F0145A;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.444;
+}
+
+a {
+  color: #24A3FF;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: 0.2s;
+}
+a:hover {
+  color: #F0145A;
+  transition: 0.2s;
+}
+
+.active-lang {
+  border-radius: 8px;
+  background-color: #F0145A;
+  color: #fff;
+}
+
+.active-nav-link {
+  display: inline-block;
+  color: #F0145A;
+  border-bottom: 2px solid #F0145A;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Light.woff);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Bold.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Medium.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Black.woff);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Regular.woff);
+  font-weight: 400;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 160px 0;
+}
+.header__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+}
+.header__info-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__info-list li {
+  margin-left: 6px;
+}
+.header__info-list li::before {
+  background-color: #E6E6F0;
+}
+.header__info-list li a {
+  color: #B3B3BA;
+}
+.header__info-list-logo {
+  fill: #F5F5FA;
+}
+.header__info-tel {
+  font-weight: 700;
+}
+.header__nav {
+  font-weight: 700;
+}
+.header__nav a {
+  margin-left: 15px;
+}
+.header__nav a:not(.active-nav-link):hover {
+  border-bottom: 2px solid #24A3FF;
+  color: #24A3FF;
+}
+
+.site_lang {
+  display: flex;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.site_lang li {
+  padding: 5px 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.site_lang li:not(.active-lang):hover {
+  background-color: #F5F5FA;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.site_lang li::before {
+  content: none;
+}/*# sourceMappingURL=main.css.map */
