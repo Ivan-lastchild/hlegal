@@ -4,7 +4,36 @@
     justify-content: space-between;
     padding: 50px 160px 0;
 
-    
+    @media screen and (max-width:1440px) {
+        padding: 50px 60px 0;
+    }
+
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 75px;
+    }
+
+    @media screen and (max-width:600px) {
+        flex-direction: row;
+        align-items: center;
+        padding: 60px 15px 0;
+    }
+
+    &__logo {
+        @media screen and (max-width:768px) {
+            margin: 30px 0;
+        }
+
+        @media screen and (max-width:600px) {
+            margin:0;
+        }
+
+        @media screen and (max-width:375px) {
+            width: 70px;
+        }
+    }
 
     &__box {
         display: flex;
@@ -16,6 +45,23 @@
     &__info {
         display: flex;
         align-items: center;
+        margin-bottom: 15px;
+
+        @media screen and (max-width:768px) {
+            margin-bottom: 0;
+            position: absolute;
+            left: 60px;
+            top: 50px;
+        }
+
+        @media screen and (max-width:600px) {
+            top: 0;
+            left: 0;
+            right: 0;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background: rgba(245, 245, 250, 0.20);
+        }
 
         &-list {
             display: flex;
@@ -25,34 +71,90 @@
             li {
                 margin-left: 6px;
 
+                a {
+                    color: $gray-text-color;
+                    
+                    @media screen and (max-width:600px) {
+                        color: $basic-white-color;
+                    }
+                }
+
                 &::before {
                     background-color: $gray-separator-color;
+
+                    @media screen and (max-width:600px) {
+                        content: none;
+                    }
                 }
-            }
-    
-            li a {
-                color: $gray-text-color;
             }
     
             &-logo{
                 fill: $gray-bg-color;
+
+                @media screen and (max-width:600px) {
+                    color: $basic-white-color;
+                }
             }
         }
 
         &-tel {
             font-weight: 700;
         }
+
+        &-adress,
+        &-logo{
+            @media screen and (max-width:600px) {
+                display: none;
+            }
+        }
     }
 
     &__nav {
         font-weight: 700;
+        a:not(.active-nav-link):hover {
+            border-bottom: 2px solid $active-regular-color;
+            color: $active-regular-color;
+
+            @media screen and (max-width:600px) {
+                border: 0;
+            }
+        }
 
         a {
             margin-left: 15px;
 
-            &:not(.active-nav-link):hover {
-                border-bottom: 2px solid $active-regular-color;
-                color: $active-regular-color;
+            @media screen and (max-width:600px) {
+                margin-left: 0;
+                backdrop-filter: blur(5px);
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            position:fixed;
+            bottom: 0;
+            left: 8px;
+            right: 8px;
+            padding: 12px;
+            background-color: $basic-white-color;
+            border-radius: 12px 12px 0 0;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            
+            
+
+            a {
+                font-size: 24px;
+                margin-top: 15px;
+                padding: 7px 0;
+                width: 100%;
+                text-align: center;
+                border-radius: 12px;
+                background-color: $gray-bg-color;
+
+                &:active {
+                    background-color: $gray-separator-color;
+                }
             }
         }
     }
@@ -61,6 +163,10 @@
     display: flex;
     text-transform: uppercase;
     color: $gray-text-color;
+
+    @media screen and (max-width:600px) {
+        color: $basic-white-color;
+    }
 
     li {
         padding: 5px 7px;
@@ -79,5 +185,31 @@
         &::before {
             content: none;
         }
+    }
+}
+
+.close-btn {
+    display: none;
+
+    @media screen and (max-width:600px) {
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 5px;
+        align-self: flex-end;
+    }
+}
+
+.humburger-btn {
+    color: $main-color;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width:600px) {
+        display: inline-block;
+    }
+
+    &:active {
+        background-color: $gray-separator-color;
+        border-radius: 8px;
     }
 }
