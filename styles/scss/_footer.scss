@@ -1,0 +1,102 @@
+.footer {
+    padding: 30px 0;
+    margin: 0 160px;
+    border-top: 2px solid $gray-separator-color;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &-adress {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            li {
+                margin-left: 10px;
+                padding-left: 16px;
+
+                &::before {
+                    background-color: $gray-separator-color;
+                    
+                }
+
+                &:first-child {
+                    padding: 0;
+                    margin: 0;
+                    color: $main-color;
+                    font-size: 16px;
+    
+                    &::before {
+                        content: none;
+                    }
+                }
+
+                &:nth-child(2) {
+                    a {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                    }
+                }
+
+
+            }
+
+        }
+
+        &-nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 21px;
+
+            li:first-child {
+                padding: 0;
+                margin: 0;
+
+                &::before {
+                    content: none;
+                }
+            }
+
+            li{
+                padding-left: 16px;
+                margin-left: 10px;
+
+                &::before{
+                    background-color: $gray-separator-color;
+                    
+                }
+            }
+
+            &-fb{
+                a svg{
+                    display: inline-block;
+                    width: 32px;
+                }
+                
+            }
+
+            &-tel a{
+                color: $alt-color;
+                font-weight: 700;
+            }
+
+            &-email a {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__legacy {
+        font-size: 16px;
+        color: $gray-text-color;
+    }
+}

@@ -72,7 +72,7 @@
                 margin-left: 6px;
 
                 a {
-                    color: $gray-text-color;
+                    color: $basic-white-color;
                     
                     @media screen and (max-width:600px) {
                         color: $basic-white-color;
@@ -89,8 +89,6 @@
             }
     
             &-logo{
-                fill: $gray-bg-color;
-
                 @media screen and (max-width:600px) {
                     color: $basic-white-color;
                 }
@@ -99,6 +97,7 @@
 
         &-tel {
             font-weight: 700;
+            color: $gray-text-color;
         }
 
         &-adress,
@@ -120,12 +119,18 @@
             }
         }
 
-        a {
+        a:not(.active-nav-link) {
             margin-left: 15px;
+            color: $basic-white-color;
 
             @media screen and (max-width:600px) {
-                margin-left: 0;
-                backdrop-filter: blur(5px);
+                color: $active-regular-color;
+            }
+        }
+
+        &-adress {
+            @media screen and (max-width:768px) {
+                color: $gray-text-color;
             }
         }
 
@@ -141,8 +146,6 @@
             align-items: center;
             display: none;
             
-            
-
             a {
                 font-size: 24px;
                 margin-top: 15px;
@@ -159,10 +162,11 @@
         }
     }
 }
+
 .site_lang {
     display: flex;
     text-transform: uppercase;
-    color: $gray-text-color;
+    color: $basic-white-color;
 
     @media screen and (max-width:600px) {
         color: $basic-white-color;
