@@ -4,7 +4,7 @@ let hamburgerBtn = document.querySelector(".humburger-btn");
 let body = document.querySelector('body');
 
 hamburgerBtn.addEventListener('click', ()=>{
-    navPanel.classList.add('show');
+    navPanel.classList.toggle('show');
 })
 
 closeBtn.addEventListener('click', ()=>{

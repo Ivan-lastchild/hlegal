@@ -389,30 +389,68 @@ a:hover {
 }
 
 .footer {
-  padding: 30px 0;
-  margin: 0 160px;
+  padding-top: 30px;
+  margin: 30px 160px;
   border-top: 2px solid #E6E6F0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media screen and (max-width: 1440px) {
+  .footer {
+    margin: 30px 60px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    margin: 30px;
+  }
 }
 .footer__info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 690px) {
+  .footer__info {
+    align-items: center;
+  }
 }
 .footer__info-adress {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+@media screen and (max-width: 690px) {
+  .footer__info-adress {
+    flex-direction: column;
+  }
+}
 .footer__info-adress li {
   margin-left: 10px;
   padding-left: 16px;
 }
+@media screen and (max-width: 690px) {
+  .footer__info-adress li {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+}
 .footer__info-adress li::before {
   background-color: #E6E6F0;
+}
+@media screen and (max-width: 690px) {
+  .footer__info-adress li::before {
+    content: none;
+  }
 }
 .footer__info-adress li:first-child {
   padding: 0;
@@ -435,6 +473,11 @@ a:hover {
   align-items: center;
   margin-top: 21px;
 }
+@media screen and (max-width: 690px) {
+  .footer__info-nav {
+    flex-direction: column;
+  }
+}
 .footer__info-nav li:first-child {
   padding: 0;
   margin: 0;
@@ -448,6 +491,17 @@ a:hover {
 }
 .footer__info-nav li::before {
   background-color: #E6E6F0;
+}
+@media screen and (max-width: 690px) {
+  .footer__info-nav li::before {
+    content: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  .footer__info-nav li {
+    margin: 10px 0 0;
+    padding: 0;
+  }
 }
 .footer__info-nav-fb a svg {
   display: inline-block;
@@ -463,4 +517,17 @@ a:hover {
 .footer__legacy {
   font-size: 16px;
   color: #B3B3BA;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .footer__legacy {
+    position: absolute;
+    right: 60px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .footer__legacy {
+    position: static;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
