@@ -101,7 +101,14 @@
         }
 
         &-adress,
-        &-logo{
+        &-logo a svg{
+            fill: $basic-white-color;
+            transition: .2s;
+
+            &:hover {
+                fill: $accent-color;
+                transition: .2s;
+            }
             @media screen and (max-width:600px) {
                 display: none;
             }

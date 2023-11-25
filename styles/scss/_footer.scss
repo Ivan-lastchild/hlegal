@@ -120,10 +120,16 @@
 
             &-fb{
                 a svg{
-                    display: inline-block;
+                    fill: $active-regular-color;
+                    transition: .2s;
                     width: 32px;
+                    height: 32px;
+    
+                    &:hover {
+                        fill: $accent-color;
+                        transition: .2s;
+                    }
                 }
-                
             }
 
             &-tel a{

@@ -1,0 +1,83 @@
+.clients {
+    padding: 0 100px;
+
+    @media screen and (max-width: 1440px) {
+        padding: 0;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(256px, 1fr));
+        grid-template-rows: repeat(3, 120px);
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(3, minmax(256px, 1fr));
+            grid-template-rows: repeat(4, 120px);
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(12, 120px);
+            max-height: 720px;
+            overflow: scroll;
+        }
+    }
+    
+    &__item {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            transform: scale(1.05, 1.05)
+        }
+    }
+}
+
+
+
+
+.hillel{
+    background: #1C4280;
+}
+.WannaBiz{
+    background: #143646;
+}
+.tapgerine{
+    background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+}
+.look{
+    background: #9E4DC3;
+}
+.orangear{
+    background: #FD9339;
+}
+.adtelligent{
+    background: #E2E2E4;
+}
+.clickky{
+    background: #C71C36;
+}
+.ecoleasing{
+    background: #DCF3F9;
+}
+.infatek{
+    background: #EAEAEA;
+}
+.citypark{
+    background: #282240;
+}
+.artprint{
+    background: #1D4568;
+}
+.ultimatecard{
+    background: #000;
+}
