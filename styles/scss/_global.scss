@@ -94,6 +94,26 @@ a {
         border: none;
      }
 }
+
+.subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $active-regular-color;
+    position: relative;
+
+    &::after {
+        content: url(../../img/Arrow.png);
+    }
+}
+
+.gradient-text {
+    background-image: $gradient-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
 .show {
     display: inherit !important;
 }
