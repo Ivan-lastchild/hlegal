@@ -102,9 +102,15 @@ a {
     font-weight: 700;
     color: $active-regular-color;
     position: relative;
+    transition: .2s;
 
     &::after {
         content: url(../../img/Arrow.png);
+    }
+
+    &:hover {
+        color: $accent-color;
+        transition: .2s;
     }
 }
 

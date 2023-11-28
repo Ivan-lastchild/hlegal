@@ -151,9 +151,14 @@ a:hover {
   font-weight: 700;
   color: #24A3FF;
   position: relative;
+  transition: 0.2s;
 }
 .subtitle::after {
   content: url(../../img/Arrow.png);
+}
+.subtitle:hover {
+  color: #F0145A;
+  transition: 0.2s;
 }
 
 .gradient-text {
@@ -414,6 +419,89 @@ a:hover {
   border-radius: 8px;
 }
 
+.team {
+  padding: 0 160px 60px;
+}
+@media screen and (max-width: 1440px) {
+  .team {
+    padding: 0 60px 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team {
+    padding: 0 30px 60px;
+  }
+}
+.team__item {
+  display: flex;
+  background-color: #EDEDF7;
+  border-radius: 12px 0 0 12px;
+}
+@media screen and (max-width: 1024px) {
+  .team__item {
+    flex-direction: column;
+    border-radius: 12px 12px 0 0;
+  }
+}
+.team__img {
+  min-width: 400px;
+  height: auto;
+  background: url(../../img/team/teammate.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px 0 0 12px;
+}
+@media screen and (max-width: 1024px) {
+  .team__img {
+    height: 500px;
+    min-width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+}
+.team__textBox {
+  padding: 30px;
+}
+.team__text {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .team__text {
+    font-size: 30px;
+  }
+}
+.team__personName {
+  font-weight: 700;
+  color: #B3B3BA;
+}
+.team__partner {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #B3B3BA;
+}
+.team__control {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.team__control svg {
+  fill: #24A3FF;
+  fill-opacity: 0.2;
+}
+.team__control svg:not(.active-dot):hover {
+  fill-opacity: 0.7;
+  transition: 0.2s;
+}
+.team__control .active-dot {
+  fill-opacity: 1;
+}
+
 .clients {
   padding: 0 100px 60px;
 }
@@ -593,16 +681,16 @@ a:hover {
 }
 
 .footer {
-  padding-top: 30px;
-  margin: 30px 160px;
+  padding: 30px 160px;
   border-top: 2px solid #E6E6F0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  background-color: #F5F5FA;
 }
 @media screen and (max-width: 1440px) {
   .footer {
-    margin: 30px 60px;
+    padding: 30px 60px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -613,7 +701,7 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .footer {
-    margin: 30px;
+    padding: 30px;
   }
 }
 .footer__info {

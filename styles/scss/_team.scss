@@ -1,0 +1,86 @@
+.team {
+    padding: 0 160px 60px;
+
+    @media screen and (max-width: 1440px ) {
+        padding: 0 60px 60px;
+    }
+
+    @media screen and (max-width: 600px ) {
+        padding: 0 30px 60px;
+    }
+
+    &__item {
+        display: flex;
+        background-color: #EDEDF7;
+        border-radius: 12px 0 0 12px;
+
+        @media screen and (max-width: 1024px ) {
+            flex-direction: column;
+            border-radius: 12px 12px 0 0;
+        }
+    }
+
+    &__img {
+        min-width: 400px;
+        height: auto;
+        background: url(../../img/team/teammate.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 12px 0 0 12px;
+
+        @media screen and (max-width: 1024px ) {
+            height: 500px;
+            min-width: 100%;
+            border-radius: 12px 12px 0 0;
+        }
+    }
+
+    &__textBox {
+        padding: 30px;
+    }
+
+    &__text {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px ) {
+            font-size: 30px;
+        }
+    }
+
+    &__personName {
+        font-weight: 700;
+        color: $gray-text-color;
+    }
+
+    &__partner {
+        font-size: 14px;
+        line-height: 1.57;
+        color: $gray-text-color;
+    }
+
+    &__control {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        transition: .2s;
+        cursor: pointer;
+        svg {
+            fill: $active-regular-color;
+            fill-opacity: 0.2;
+
+            &:not(.active-dot):hover{
+                fill-opacity: 0.7;
+                transition: .2s;
+            }
+        }
+
+        .active-dot {
+            fill-opacity: 1;
+        }
+    }
+}
