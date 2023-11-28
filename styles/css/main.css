@@ -54,7 +54,7 @@ table {
 body {
   font-family: "Montserrat";
   font-weight: 400;
-  background-color: #c15959;
+  background: linear-gradient(229deg, rgb(50, 50, 100) 11.93%, rgb(50, 50, 100) 57.17%, rgb(100, 62, 114) 87.46%);
 }
 
 .center {
@@ -350,6 +350,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     display: none;
+    z-index: 10;
   }
   .header__nav a {
     font-size: 24px;
@@ -419,22 +420,109 @@ a:hover {
   border-radius: 8px;
 }
 
-.team {
+.services {
   padding: 0 160px 60px;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+}
+.services:before {
+  content: "";
+  position: absolute;
+  background-color: #cacadb;
+  border-radius: 0 0 12px 12px;
+  height: 10px;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  z-index: 2;
+}
+.services:after {
+  content: "";
+  position: absolute;
+  background-color: #E7E7F2;
+  border-radius: 0 0 12px 12px;
+  height: 10px;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
 }
 @media screen and (max-width: 1440px) {
-  .team {
+  .services {
     padding: 0 60px 60px;
   }
 }
 @media screen and (max-width: 600px) {
+  .services {
+    padding: 0 30px 30px;
+  }
+}
+.services__title {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+  .services__title {
+    margin-bottom: 30px;
+  }
+}
+.services__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .services__box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .services__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.services__item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  background-color: #fff;
+  border-radius: 24px;
+  margin-bottom: 30px;
+}
+.services__item-title {
+  color: #24A3FF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.services__item-text {
+  line-height: 1.62;
+  color: #fff;
+}
+
+.team {
+  padding: 80px 160px 60px;
+  background-color: #fff;
+}
+@media screen and (max-width: 1440px) {
   .team {
-    padding: 0 30px 60px;
+    padding: 80px 60px 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team {
+    padding: 50px 30px 60px;
   }
 }
 .team__item {
   display: flex;
-  background-color: #EDEDF7;
+  background-color: #F5F5FA;
   border-radius: 12px 0 0 12px;
 }
 @media screen and (max-width: 1024px) {
@@ -504,6 +592,7 @@ a:hover {
 
 .clients {
   padding: 0 100px 60px;
+  background-color: #fff;
 }
 @media screen and (max-width: 1440px) {
   .clients {
