@@ -95,6 +95,13 @@ a {
      }
 }
 
+.active-topic-link {
+    background-image: $gradient-text-red-reversed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
+}
+
 .subtitle {
     font-size: 14px;
     text-transform: uppercase;
@@ -116,8 +123,8 @@ a {
 
 .gradient-text {
     background-image: $gradient-red-text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .show {
