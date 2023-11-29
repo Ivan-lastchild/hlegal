@@ -2,6 +2,7 @@ body {
     font-family: "Montserrat";
     font-weight: 400;
     background: $gradient-supersoft;
+    position: relative;
 }
 
 .center {
@@ -108,16 +109,17 @@ a {
     letter-spacing: 1px;
     font-weight: 700;
     color: $active-regular-color;
-    position: relative;
     transition: .2s;
-
-    &::after {
-        content: url(../../img/Arrow.png);
-    }
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    stroke: $active-regular-color;
+    cursor: pointer;
 
     &:hover {
-        color: $accent-color;
         transition: .2s;
+        stroke: $accent-color;
+        color: $accent-color;
     }
 }
 

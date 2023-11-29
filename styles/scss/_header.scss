@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 50px 160px 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 11;
 
     @media screen and (max-width:1440px) {
         padding: 50px 60px 0;
@@ -11,7 +15,6 @@
     @media screen and (max-width:768px) {
         flex-direction: column;
         align-items: flex-start;
-        position: relative;
         padding-top: 75px;
     }
 

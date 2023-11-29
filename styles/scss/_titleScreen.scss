@@ -1,0 +1,45 @@
+.titleScreen {
+    padding: 477px 0;
+    background-image: url(../../img/Symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    @media screen and (max-width: 1440px) {
+        padding: 377px 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 361px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 489px 30px;
+    }
+
+    @media screen and (max-width: 375px) {
+        padding: 231px 30px;
+        background-size: cover;
+    }
+
+    &__title {
+        font-size: 38px;
+        font-weight: 700;
+        text-align: center;
+        color: $basic-white-color;
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 30px;
+        left: calc(50% - 21px);
+        transition: .2s;
+        cursor: pointer;
+        stroke: $basic-white-color;
+
+        &:hover {
+            transition: .2s;
+            stroke: $accent-color;
+        }
+    }
+}

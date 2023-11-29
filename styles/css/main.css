@@ -4,7 +4,8 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 30%;
+  scroll-padding-top: 10%;
+  scroll-padding-bottom: 20%;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -60,6 +61,7 @@ body {
   font-family: "Montserrat";
   font-weight: 400;
   background: linear-gradient(229deg, rgb(50, 50, 100) 11.93%, rgb(50, 50, 100) 57.17%, rgb(100, 62, 114) 87.46%);
+  position: relative;
 }
 
 .center {
@@ -162,15 +164,17 @@ a:hover {
   letter-spacing: 1px;
   font-weight: 700;
   color: #24A3FF;
-  position: relative;
   transition: 0.2s;
-}
-.subtitle::after {
-  content: url(../../img/Arrow.png);
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  stroke: #24A3FF;
+  cursor: pointer;
 }
 .subtitle:hover {
-  color: #F0145A;
   transition: 0.2s;
+  stroke: #F0145A;
+  color: #F0145A;
 }
 
 .gradient-text {
@@ -213,6 +217,10 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 50px 160px 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 11;
 }
 @media screen and (max-width: 1440px) {
   .header {
@@ -223,7 +231,6 @@ a:hover {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
     padding-top: 75px;
   }
 }
@@ -428,6 +435,53 @@ a:hover {
 .humburger-btn:active {
   background-color: #E6E6F0;
   border-radius: 8px;
+}
+
+.titleScreen {
+  padding: 477px 0;
+  background-image: url(../../img/Symbol.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+@media screen and (max-width: 1440px) {
+  .titleScreen {
+    padding: 377px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .titleScreen {
+    padding: 361px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titleScreen {
+    padding: 489px 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .titleScreen {
+    padding: 231px 30px;
+    background-size: cover;
+  }
+}
+.titleScreen__title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.titleScreen__scroll {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 21px);
+  transition: 0.2s;
+  cursor: pointer;
+  stroke: #fff;
+}
+.titleScreen__scroll:hover {
+  transition: 0.2s;
+  stroke: #F0145A;
 }
 
 .experiance {
@@ -808,7 +862,6 @@ a:hover {
   }
 }
 .recommended__subtitle {
-  display: inline-block;
   margin-bottom: 10px;
 }
 .recommended__title {
