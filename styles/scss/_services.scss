@@ -90,3 +90,33 @@
         }
     }
 }
+
+.servicesScreen {
+    padding-top: 176px;
+
+    @media screen and (max-width: 930px ) {
+        padding-top: 280px;
+    }
+
+    @media screen and (max-width: 600px ) {
+        padding-top: 132px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+
+        @media screen and (max-width: 600px ) {
+            font-size: 30px;
+        }
+    
+    }
+
+    &__item-title {
+        transition: .2s;
+        &:hover {
+            transition: .2s;
+            color: $accent-color;
+        }
+    }
+}

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/css/main.css">
-    <script src="./scripts/script.js" defer></script>
-    <title>Hlegal</title>
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <script src="../scripts/script.js" defer></script>
+    <title>Services</title>
 </head>
 <body>
     <header class="header center">
-        <a href="#" class="header__logo">
+        <a href="../index.html" class="header__logo">
             <svg width="130" height="60" viewBox="0 0 130 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_122816_706)">
                     <path d="M4.95672 0H0V35.7986H4.95672V22.5177C4.95672 20.2709 5.51557 18.4984 6.63326 17.2502C7.75095 16.002 9.2817 15.353 11.1769 15.353C12.8049 15.353 14.1655 15.9521 15.2589 17.1004C16.3523 18.2738 16.9112 19.7466 16.9112 21.5191V35.8236H21.8922V21.5191C21.8922 18.2238 20.9932 15.6276 19.1951 13.6804C17.3971 11.7332 15.0402 10.7596 12.1731 10.7596C11.347 10.7596 10.5209 10.8594 9.71906 11.0841C8.89294 11.3088 8.2369 11.5584 7.70235 11.833C7.16781 12.1076 6.65756 12.4072 6.1959 12.7567C5.73424 13.1062 5.41838 13.3558 5.27259 13.5056C5.1268 13.6554 5.00532 13.7552 4.95672 13.8301V0Z" fill="#F0145A"/>
@@ -35,6 +35,14 @@
                     </clipPath>
                     </defs>
             </svg>
+            <svg width="21" height="47" viewBox="0 0 21 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Assets / Slash">
+                <path id="Slash" fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z" fill="#F0145A"/>
+                </g>
+            </svg>
+            <div class="header__logo-text">
+                services
+            </div>
         </a>
         <div class="header__box">
             <div class="header__info">
@@ -81,10 +89,10 @@
                         </g>
                     </svg>                        
                 </div>
-                <a href="#" class="header__nav-item active-nav-link">
+                <a href="../index.html" class="header__nav-item ">
                     about us
                 </a>
-                <a href="./pages/services.html" class="header__nav-item">
+                <a href="#" class="header__nav-item active-nav-link">
                     services
                 </a>
                 <a href="#" class="header__nav-item">
@@ -109,64 +117,10 @@
         </div>
     </header>
     <main>
-        <section class="titleScreen">
-            <h1 class="titleScreen__title">
-                you legal solutions provider
-            </h1>
-            <a href="#experiance" class="titleScreen__scroll">
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_22728_11353)">
-                    <circle opacity="0.5" cx="21" cy="21" r="20"  stroke-width="2"/>
-                    <path d="M12 18L21 27L30 18"  stroke-width="2"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_22728_11353">
-                    <rect width="42" height="42" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>
-            </a>
-        </section>
-        <section class="experiance center" id="experiance">
-            <div class="experiance__topic">
-                <a href="#" class="experiance__topic-link active-topic-link">
-                    Consistent
-                </a>
-                <a href="#" class="experiance__topic-link">
-                    Customer oriented
-                </a>
-                <a href="#" class="experiance__topic-link">
-                    Innovative
-                </a>
-                <a href="#" class="experiance__topic-link">
-                    Business oriented
-                </a>
-            </div>
-            <div class="experiance__descrip">
-                <h3 class="experiance__descrip-title">
-                    We turn the idea of legal services
-                </h3>
-                <p class="experiance__descrip-text">
-                    Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                </p>
-            </div>
-        </section>
-        <section class="services">
-            <div class="services__subtitle subtitle">
-                <a href="./pages/services.html" class="subtitle__text">
-                    Services
-                </a>
-                <div class="subtitle__img">
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Assets / Arrow">
-                        <path id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke-width="2"/>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <h2 class="services__title gradient-text">
+        <section class="services servicesScreen">
+            <h1 class="services__title servicesScreen__title gradient-text">
                 What can we do better than others?
-            </h2>
+            </h1>
             <div class="services__box">
                 <div class="services__item">
                     <div class="services__item-img">
@@ -186,7 +140,7 @@
                             </defs>
                         </svg>                            
                     </div>
-                    <h4 class="services__item-title">
+                    <h4 class="services__item-title servicesScreen__item-title">
                         IT and e-commerce
                     </h4>
                     <p class="services__item-text">
@@ -220,7 +174,7 @@
                             </defs>
                         </svg>                         
                     </div>
-                    <h4 class="services__item-title">
+                    <h4 class="services__item-title servicesScreen__item-title">
                         Comprehensive daily legal support
                     </h4>
                     <p class="services__item-text">
@@ -251,7 +205,7 @@
                             </defs>
                         </svg>                      
                     </div>
-                    <h4 class="services__item-title">
+                    <h4 class="services__item-title servicesScreen__item-title">
                         Structuring corporate relationships
                     </h4>
                     <p class="services__item-text">
@@ -295,7 +249,7 @@
                             </defs>
                         </svg>                     
                     </div>
-                    <h4 class="services__item-title">
+                    <h4 class="services__item-title servicesScreen__item-title">
                         Building contractual relations
                     </h4>
                     <p class="services__item-text">
@@ -319,7 +273,7 @@
                             </defs>
                         </svg>                
                     </div>
-                    <h4 class="services__item-title">
+                    <h4 class="services__item-title servicesScreen__item-title">
                         Protection of business, intellectual property
                     </h4>
                     <p class="services__item-text">
@@ -353,7 +307,7 @@
                             </defs>
                         </svg>           
                     </div>
-                    <h4 class="services__item-title">
+                    <h4 class="services__item-title servicesScreen__item-title">
                         Judicial representation
                     </h4>
                     <p class="services__item-text">
@@ -362,139 +316,45 @@
                 </div>
             </div>
         </section>
-        <section class="team center">
-            <div class="team__item">
-                <div class="team__img"> 
-                </div>
-                <div class="team__textBox">
-                    <div class="team_subtitle subtitle">
-                        <div class="subtitle__text">
-                            Team
-                        </div>
-                        <div class="subtitle__img">
-                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="Assets / Arrow">
-                                <path id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke-width="2"/>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="team__text gradient-text">
-                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                    </p>
-                    <div class="team__personName">
-                        Олександр Олександровський
-                    </div>
-                    <div class="team__partner">
-                        Керуючий партнер
-                    </div>
-                </div>
-            </div>
-            <div class="team__control">
-                <svg class="active-dot" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle  cx="8" cy="8" r="8" />
-                </svg>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle  cx="8" cy="8" r="8" />
-                </svg>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle  cx="8" cy="8" r="8" />
-                </svg>
-            </div>
-        </section>
-        <section class="clients center">
+        <section class="clients servicesScreen-clients center">
             <h4 class="clients__title">They already trust us</h4>
             <div class="clients__box">
                 <a href="#" class="clients__item hillel">
-                    <img src="./img/clients/hillel.png" alt="Hille">
+                    <img src="../img/clients/hillel.png" alt="Hille">
                 </a>
                 <a href="#" class="clients__item WannaBiz">
-                    <img src="./img/clients/wannabiz.png" alt="wannabiz">
+                    <img src="../img/clients/wannabiz.png" alt="wannabiz">
                 </a>
                 <a href="#" class="clients__item tapgerine">
-                    <img src="./img/clients/tapgerine.png" alt="tapgerine">
+                    <img src="../img/clients/tapgerine.png" alt="tapgerine">
                 </a>
                 <a href="#" class="clients__item look">
-                    <img src="./img/clients/3dlook.png" alt="3d look">
+                    <img src="../img/clients/3dlook.png" alt="3d look">
                 </a>
                 <a href="#" class="clients__item orangear">
-                    <img src="./img/clients/orangear.png" alt="Orangear">
+                    <img src="../img/clients/orangear.png" alt="Orangear">
                 </a>
                 <a href="#" class="clients__item adtelligent">
-                    <img src="./img/clients/adtelligent.png" alt="adtelligent">
+                    <img src="../img/clients/adtelligent.png" alt="adtelligent">
                 </a>
                 <a href="#" class="clients__item clickky">
-                    <img src="./img/clients/clickky.png" alt="clickky">
+                    <img src="../img/clients/clickky.png" alt="clickky">
                 </a>
                 <a href="#" class="clients__item ecoleasing">
-                    <img src="./img/clients/eco-leasing.png" alt="eco leasing">
+                    <img src="../img/clients/eco-leasing.png" alt="eco leasing">
                 </a>
                 <a href="#" class="clients__item infatek">
-                    <img src="./img/clients/ingratek.png" alt="ingratek">
+                    <img src="../img/clients/ingratek.png" alt="ingratek">
                 </a>
                 <a href="#" class="clients__item citypark">
-                    <img src="./img/clients/city-par.png" alt="citypark">
+                    <img src="../img/clients/city-par.png" alt="citypark">
                 </a>
                 <a href="#" class="clients__item artprint">
-                    <img src="./img/clients/artprint.png" alt="artprint">
+                    <img src="../img/clients/artprint.png" alt="artprint">
                 </a>
                 <a href="#" class="clients__item ultimatecard">
-                    <img src="./img/clients/ultimatecard.png" alt="ultimatecard">
+                    <img src="../img/clients/ultimatecard.png" alt="ultimatecard">
                 </a>
-            </div>
-        </section>
-        <section class="recommended center">
-            <div class="recommended__subtitle subtitle">
-                <div class="subtitle__text">
-                    Recommended
-                </div>
-                <div class="subtitle__img">
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Assets / Arrow">
-                        <path id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke-width="2"/>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <h3 class="recommended__title gradient-text">
-                We have something to tell
-            </h3>
-            <div class="recommended__box">
-                <div class="recommended__item">
-                    <img src="./img/recommended/stat.jpg" class="recommended__item-img" alt="Statistics">
-                    <h3 class="recommended__item-title">
-                        Equity associate
-                    </h3>
-                    <span class="recommended__item-date">
-                        April 22
-                    </span>
-                    <p class="recommended__item-text">
-                        I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
-                    </p>
-                </div>
-                <div class="recommended__item">
-                    <img src="./img/recommended/gdpr.jpg" class="recommended__item-img" alt="Gdpr">
-                    <h3 class="recommended__item-title">
-                        Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
-                    </h3>
-                    <span class="recommended__item-date">
-                        September 29
-                    </span>
-                    <p class="recommended__item-text">
-                        And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
-                    </p>
-                </div>
-                <div class="recommended__item">
-                    <img src="./img/recommended/pepole.jpg" class="recommended__item-img" alt="People">
-                    <h3 class="recommended__item-title">
-                        Millennial Testament
-                    </h3>
-                    <span class="recommended__item-date">
-                        August 19
-                    </span>
-                    <p class="recommended__item-text">
-                        What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…                    </p>
-                </div>
             </div>
         </section>
     </main>

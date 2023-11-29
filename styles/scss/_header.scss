@@ -12,7 +12,7 @@
         padding: 50px 60px 0;
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:930px) {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 75px;
@@ -25,7 +25,15 @@
     }
 
     &__logo {
-        @media screen and (max-width:768px) {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+        &-text{
+            font-size: 36px;
+            color: $basic-white-color;
+        }
+
+        @media screen and (max-width:930px) {
             margin: 30px 0;
         }
 
@@ -50,7 +58,7 @@
         align-items: center;
         margin-bottom: 15px;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:930px) {
             margin-bottom: 0;
             position: absolute;
             left: 60px;
@@ -120,6 +128,8 @@
 
     &__nav {
         font-weight: 700;
+        display: flex;
+        gap: 15px;
         a:not(.active-nav-link):hover {
             border-bottom: 2px solid $active-regular-color;
             color: $active-regular-color;
@@ -130,7 +140,6 @@
         }
 
         a:not(.active-nav-link) {
-            margin-left: 15px;
             color: $basic-white-color;
 
             @media screen and (max-width:600px) {

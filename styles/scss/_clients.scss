@@ -25,7 +25,7 @@
             grid-template-columns:1fr;
             grid-template-rows: repeat(12, 120px);
             max-height: 720px;
-            overflow: scroll;
+            overflow-y: scroll;
         }
     }
     
@@ -81,4 +81,9 @@
 }
 .ultimatecard{
     background: #000;
+}
+
+.servicesScreen-clients {
+    padding-top: 80px;
+    overflow: scroll;
 }

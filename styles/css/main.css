@@ -227,7 +227,7 @@ a:hover {
     padding: 50px 60px 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -241,7 +241,16 @@ a:hover {
     padding: 60px 15px 0;
   }
 }
-@media screen and (max-width: 768px) {
+.header__logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.header__logo-text {
+  font-size: 36px;
+  color: #fff;
+}
+@media screen and (max-width: 930px) {
   .header__logo {
     margin: 30px 0;
   }
@@ -267,7 +276,7 @@ a:hover {
   align-items: center;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .header__info {
     margin-bottom: 0;
     position: absolute;
@@ -333,6 +342,8 @@ a:hover {
 }
 .header__nav {
   font-weight: 700;
+  display: flex;
+  gap: 15px;
 }
 .header__nav a:not(.active-nav-link):hover {
   border-bottom: 2px solid #24A3FF;
@@ -344,7 +355,6 @@ a:hover {
   }
 }
 .header__nav a:not(.active-nav-link) {
-  margin-left: 15px;
   color: #fff;
 }
 @media screen and (max-width: 600px) {
@@ -454,7 +464,7 @@ a:hover {
     padding: 361px 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .titleScreen {
     padding: 489px 30px;
   }
@@ -671,6 +681,36 @@ a:hover {
   color: #fff;
 }
 
+.servicesScreen {
+  padding-top: 176px;
+}
+@media screen and (max-width: 930px) {
+  .servicesScreen {
+    padding-top: 280px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .servicesScreen {
+    padding-top: 132px;
+  }
+}
+.servicesScreen__title {
+  font-weight: 700;
+  font-size: 38px;
+}
+@media screen and (max-width: 600px) {
+  .servicesScreen__title {
+    font-size: 30px;
+  }
+}
+.servicesScreen__item-title {
+  transition: 0.2s;
+}
+.servicesScreen__item-title:hover {
+  transition: 0.2s;
+  color: #F0145A;
+}
+
 .team {
   padding: 80px 160px 60px;
   background-color: #fff;
@@ -784,7 +824,7 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 120px);
     max-height: 720px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 .clients__item {
@@ -845,6 +885,11 @@ a:hover {
 
 .ultimatecard {
   background: #000;
+}
+
+.servicesScreen-clients {
+  padding-top: 80px;
+  overflow: scroll;
 }
 
 .recommended {
