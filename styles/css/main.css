@@ -448,25 +448,18 @@ a:hover {
 }
 
 .titleScreen {
-  padding: 477px 0;
+  height: 100vh;
   background-image: url(../../img/Symbol.png);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
-@media screen and (max-width: 1440px) {
-  .titleScreen {
-    padding: 377px 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .titleScreen {
-    padding: 361px 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 930px) {
   .titleScreen {
-    padding: 489px 30px;
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -478,7 +471,6 @@ a:hover {
 .titleScreen__title {
   font-size: 38px;
   font-weight: 700;
-  text-align: center;
   color: #fff;
 }
 .titleScreen__scroll {
